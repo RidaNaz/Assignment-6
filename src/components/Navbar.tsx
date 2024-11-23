@@ -41,7 +41,7 @@ export default function Navbar() {
                 </div>
 
                 <div className='hidden lg:block '>
-                    <div className='flex gap-14 text-black bg-white py-1 pl-4 font-medium items-center'>
+                    <div className='flex gap-14 text-black bg-white py-1 pl-4 xl:pr-0 pr-4 font-medium items-center'>
                         <Link href="">
                             <p className='hover:border-black border-b border-transparent'>Home</p>
                         </Link>
@@ -55,20 +55,21 @@ export default function Navbar() {
                             <p className='hover:border-black border-b border-transparent'>Achievement</p>
                         </Link>
                         <Link href="">
-                            <p className='hover:border-black border-b border-transparent'>About Us</p>
+                            <p className='hover:border-black border-b border-transparent'>About</p>
                         </Link>
                         <Link href="">
                             <p className='hover:border-black border-b border-transparent'>Testimonials</p>
                         </Link>
 
-                        <div className='gap-3 flex'>
-                            <button
-                                className="bg-white text-black py-2 px-5 rounded hover:bg-black hover:text-white border-black border-l border-r border-t border-b ">Login</button>
+                        <div className='xl:block hidden'>
+                            <div className='gap-3 flex'>
+                                <button
+                                    className="bg-white text-black py-2 px-5 rounded hover:bg-black hover:text-white border-black border-l border-r border-t border-b ">Login</button>
 
-                            <button
-                                className="bg-black text-white py-2 px-5 rounded hover:bg-white hover:text-black border-black border-l border-r border-t border-b">Sign Up</button>
+                                <button
+                                    className="bg-black text-white py-2 px-5 rounded hover:bg-white hover:text-black border-black border-l border-r border-t border-b">Sign Up</button>
+                            </div>
                         </div>
-
                     </div>
                 </div>
             </div>

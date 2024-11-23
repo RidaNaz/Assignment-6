@@ -4,7 +4,7 @@ import Link from "next/link";
 const Footer = () => {
     return (
         <footer className="bg-white ">
-            <div className="max-w-8xl mx-auto py-8 ">
+            <div className=" mx-auto py-8 max-w-8xl">
                 {/* Newsletter Section */}
                 <div className="flex flex-col md:flex-row gap-6 mb-8 ">
 
@@ -91,11 +91,11 @@ const Footer = () => {
                 </div>
 
                 {/* Footer Bottom */}
-                <div className="mt-16 border-t border-black">
+                <div className="mt-16 border-t border-black mx-14">
                     <div className="p-5  grid grid-cols-1 lg:grid-cols-5 gap-5 justify-items-center mt-4">
 
-                        <div className="text-black flex gap-10">2023 Ddsgnr. All rights reserved.</div>
-                        <div className="flex space-x-4 text-black lg:col-span-2 ">
+                        <div className="text-black flex text-sm gap-10">&copy; 2023 Ddsgnr. All rights reserved.</div>
+                        <div className="flex space-x-4 text-black text-xs md:text-sm lg:col-span-2 ">
                             <Link href="" className="underline">Privacy Policy</Link>
                             <Link href="" className="underline">Terms of Service</Link>
                             <Link href="" className="underline">Cookie Settings</Link>
