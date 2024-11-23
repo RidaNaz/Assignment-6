@@ -52,12 +52,11 @@ const Testimonials = () => {
                 </div>
 
                 {/* Testimonials Carousel */}
-                <div className="relative">
-                    <div className="flex overflow-hidden space-x-6">
+                    <div className="grid md:grid-cols-3 overflow-hidden">
                         {testimonials.map((testimonial, index) => (
                             <div
                                 key={index}
-                                className={`flex-none w-full md:w-1/3 transform transition-transform ${index === currentIndex ? "scale-100" : "scale-95"
+                                className={`flex-none w-full transform transition-transform ${index === currentIndex ? "scale-100" : "scale-95"
                                     }`}
                             >
                                 <div className="bg-[#F7F7F7] border border-black shadow-lg p-10 text-left">
@@ -91,7 +90,6 @@ const Testimonials = () => {
                             </div>
                         ))}
                     </div>
-                </div>
             </div>
             {/* Navigation Buttons */}
             <div className="flex gap-4 justify-end mr-10 mt-10">

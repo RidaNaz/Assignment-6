@@ -4,13 +4,13 @@ import Link from "next/link";
 const Footer = () => {
     return (
         <footer className="bg-white ">
-            <div className="max-w-8xl mx-auto py-8">
+            <div className="max-w-8xl mx-auto py-8 ">
                 {/* Newsletter Section */}
-                <div className="flex flex-col md:flex-row items-center md:items-start gap-6 mb-8">
+                <div className="flex flex-col md:flex-row gap-6 mb-8 ">
 
-                    <div className="grid md:grid-cols-2 grid-cols-1 gap-10 mx-4 items-center">
-                        <div>
-                            <h2 className="text-xl font-bold mb-2 text-black items-center">Subscribe to our newsletter</h2>
+                    <div className="grid md:grid-cols-2 grid-cols-1 gap-10 mx-4 justify-items-center">
+                        <div className="justify-items-center md:justify-items-start">
+                            <h2 className="text-xl font-bold mb-2 text-black">Subscribe to our newsletter</h2>
                             <p className="text-black mb-4">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             </p>
@@ -38,7 +38,7 @@ const Footer = () => {
                 </div>
 
                 {/* Footer Links */}
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-6 pt-6">
+                <div className="grid grid-cols-1 md:grid-cols-4 justify-items-center gap-8 pt-6">
                     {/* Logo and Branding */}
                     <div>
                         <Link href="" className="flex items-center space-x-2">
@@ -54,9 +54,9 @@ const Footer = () => {
                     </div>
 
                     {/* Courses */}
-                    <div>
+                    <div className="justify-items-center md:justify-items-start">
                         <h3 className="font-semibold mb-4 text-black">Courses</h3>
-                        <ul className="space-y-2 text-black">
+                        <ul className="space-y-2 text-black justify-items-center md:justify-items-start">
                             <li><Link href="" className="hover:underline">Business</Link></li>
                             <li><Link href="" className="hover:underline">Development</Link></li>
                             <li><Link href="" className="hover:underline">Technology</Link></li>
@@ -66,9 +66,9 @@ const Footer = () => {
                     </div>
 
                     {/* Resources */}
-                    <div>
-                        <h3 className="font-semibold mb-4 text-black">Resources</h3>
-                        <ul className="space-y-2 text-black">
+                    <div className="justify-items-center md:justify-items-start">
+                        <h3 className="font-semibold mb-4 text-black ">Resources</h3>
+                        <ul className="space-y-2 text-black justify-items-center md:justify-items-start">
                             <li><Link href="" className="hover:underline">Career</Link></li>
                             <li><Link href="" className="hover:underline">Resume</Link></li>
                             <li><Link href="" className="hover:underline">Learning</Link></li>
@@ -78,9 +78,9 @@ const Footer = () => {
                     </div>
 
                     {/* About Us */}
-                    <div>
+                    <div className="justify-items-center md:justify-items-start">
                         <h3 className="font-semibold mb-4 text-black">About Us</h3>
-                        <ul className="space-y-2 text-black">
+                        <ul className="space-y-2 text-black justify-items-center md:justify-items-start">
                             <li><Link href="" className="hover:underline">Contact</Link></li>
                             <li><Link href="" className="hover:underline">Help/Support</Link></li>
                             <li><Link href="" className="hover:underline">FAQ</Link></li>
@@ -91,28 +91,30 @@ const Footer = () => {
                 </div>
 
                 {/* Footer Bottom */}
-                <div className="mt-20  border-black grid grid-cols-1 lg:grid-cols-3 border-t gap-5 justify-evenly">
-                    <div className="mt-10 text-black text-sm flex gap-10 justify-between items-center">
-                        <div>2023 Ddsgnr. All rights reserved.</div>
-                        <div className="flex space-x-4 mt-4 md:mt-0">
-                            <Link href="" className="hover:underline">Privacy Policy</Link>
-                            <Link href="" className="hover:underline">Terms of Service</Link>
-                            <Link href="" className="hover:underline">Cookie Settings</Link>
+                <div className="mt-16 border-t border-black">
+                    <div className="p-5  grid grid-cols-1 lg:grid-cols-5 gap-5 justify-items-center mt-4">
+
+                        <div className="text-black flex gap-10">2023 Ddsgnr. All rights reserved.</div>
+                        <div className="flex space-x-4 text-black lg:col-span-2 ">
+                            <Link href="" className="underline">Privacy Policy</Link>
+                            <Link href="" className="underline">Terms of Service</Link>
+                            <Link href="" className="underline">Cookie Settings</Link>
                         </div>
-                    </div>
-                    <div className='flex gap-5 mt-10'>
-                        <Link href="" target="_blank" rel="noopener noreferrer">
-                            <Image src="/facebook.svg" alt="facebook" width={10} height={10} />
-                        </Link>
-                        <Link href="" target="_blank" rel="noopener noreferrer">
-                            <Image src="/instagram.svg" alt="instagram" width={18} height={18} />
-                        </Link>
-                        <Link href="" target="_blank" rel="noopener noreferrer">
-                            <Image src="/twitter.svg" alt="twitter" width={18} height={18} />
-                        </Link>
-                        <Link href="" target="_blank" rel="noopener noreferrer">
-                            <Image src="/linkedin.svg" alt="linkedin" width={18} height={18} />
-                        </Link>
+
+                        <div className='flex gap-5 lg:col-span-2 lg:justify-end mt-2 lg:mt-0'>
+                            <Link href="" target="_blank" rel="noopener noreferrer">
+                                <Image src="/facebook.svg" alt="facebook" width={10} height={10} />
+                            </Link>
+                            <Link href="" target="_blank" rel="noopener noreferrer">
+                                <Image src="/instagram.svg" alt="instagram" width={18} height={18} />
+                            </Link>
+                            <Link href="" target="_blank" rel="noopener noreferrer">
+                                <Image src="/twitter.svg" alt="twitter" width={18} height={18} />
+                            </Link>
+                            <Link href="" target="_blank" rel="noopener noreferrer">
+                                <Image src="/linkedin.svg" alt="linkedin" width={18} height={18} />
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </div>
