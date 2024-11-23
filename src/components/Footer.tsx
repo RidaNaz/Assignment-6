@@ -4,19 +4,19 @@ import Link from "next/link";
 const Footer = () => {
     return (
         <footer className="bg-white ">
-            <div className="max-w-6xl mx-auto py-8">
+            <div className="max-w-8xl mx-auto py-8">
                 {/* Newsletter Section */}
-                <div className="flex flex-col md:flex-row md:items-start gap-6 mb-8">
+                <div className="flex flex-col md:flex-row items-center md:items-start gap-6 mb-8">
 
-                    <div className="flex gap-10">
+                    <div className="grid md:grid-cols-2 grid-cols-1 gap-10 mx-4 items-center">
                         <div>
-                            <h2 className="text-xl font-bold mb-2 text-black">Subscribe to our newsletter</h2>
+                            <h2 className="text-xl font-bold mb-2 text-black items-center">Subscribe to our newsletter</h2>
                             <p className="text-black mb-4">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             </p>
                         </div>
                         <div>
-                            <form className="flex gap-5">
+                            <form className="grid grid-cols-1 md:grid-cols-2 gap-5">
                                 <input
                                     type="email"
                                     placeholder="Enter your email"
@@ -91,9 +91,9 @@ const Footer = () => {
                 </div>
 
                 {/* Footer Bottom */}
-                <div className="mt-20 flex border-black border-t gap-5 justify-between">
-                    <div className="mt-10 text-black text-sm flex flex-col md:flex-row gap-10 justify-between items-center">
-                        <p>2023 Ddsgnr. All rights reserved.</p>
+                <div className="mt-20  border-black grid grid-cols-1 lg:grid-cols-3 border-t gap-5 justify-evenly">
+                    <div className="mt-10 text-black text-sm flex gap-10 justify-between items-center">
+                        <div>2023 Ddsgnr. All rights reserved.</div>
                         <div className="flex space-x-4 mt-4 md:mt-0">
                             <Link href="" className="hover:underline">Privacy Policy</Link>
                             <Link href="" className="hover:underline">Terms of Service</Link>

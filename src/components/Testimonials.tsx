@@ -26,31 +26,7 @@ const testimonials = [
         rating: 5,
         feedback:
             '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."',
-    },
-    {
-        name: "Stephen Kerubo",
-        role: "UI/UX Designer",
-        photo: "/person4.png",
-        rating: 5,
-        feedback:
-            '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."',
-    },
-    {
-        name: "Stephen Kerubo",
-        role: "UI/UX Designer",
-        photo: "/person2.png",
-        rating: 5,
-        feedback:
-            '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."',
-    },
-    {
-        name: "Stephen Kerubo",
-        role: "UI/UX Designer",
-        photo: "/person5.png",
-        rating: 5,
-        feedback:
-            '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."',
-    },
+    }
 ];
 
 const Testimonials = () => {
@@ -65,8 +41,8 @@ const Testimonials = () => {
     };
 
     return (
-        <section className="py-12 bg-[#F7F7F7] mb-10">
-            <div className="max-w-6xl mx-auto px-4">
+        <section className="py-12 bg-[#F7F7F7] mb-10 px-4">
+            <div className="w-fit mx-auto px-4">
                 {/* Header */}
                 <div className="text-center mb-5 justify-items-start">
                     <h2 className="text-3xl font-bold mb-2 text-black pb-5">Customer testimonials</h2>

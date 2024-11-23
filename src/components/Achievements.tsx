@@ -1,9 +1,9 @@
 export default function Achievements() {
     return (
-      <div className="w-full flex items-center justify-center bg-white py-16">
-        <div className="p-6 max-w-4xl w-full">
+      <div className="w-full flex items-center justify-center bg-white py-12">
+        <div className="p-6 max-w-8xl w-full">
           {/* Header Section */}
-          <div className="text-center mb-8">
+          <div className="text-center mb-12">
             <h1 className="text-3xl font-bold text-black pb-6">Our Achievements</h1>
             <p className="text-black">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
@@ -12,7 +12,7 @@ export default function Achievements() {
           </div>
   
           {/* Statistics Section */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
+          <div className="grid grid-cols-2 sm:grid-cols-4 text-center">
             <div>
               <p className="text-3xl font-bold text-black">+200</p>
               <p className="text-black">Courses</p>
