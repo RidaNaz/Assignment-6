@@ -18,7 +18,7 @@ export default function Hero() {
 
             </div>
 
-            <div className="w-fit h-screen relative">
+            <div className="w-fit h-screen relative -mt-16">
                 <Image
                     src="/heroimage.jpeg"
                     alt="Hero Image"

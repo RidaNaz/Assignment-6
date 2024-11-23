@@ -1,0 +1,1 @@
+2. npm install @vuesax/react
