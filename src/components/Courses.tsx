@@ -49,22 +49,22 @@ export default function Courses() {
     ];
   
     return (
-      <div className="min-h-screen bg-white py-10">
+      <div className="mt-10 min-h-screen bg-white py-10 mb-12">
         {/* Header Section */}
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold text-gray-800">Courses</h1>
-          <p className="text-gray-600">Your Ultimate Guide to Learning</p>
+          <h1 className="text-4xl font-bold text-black">Courses</h1>
+          <p className="text-black font-medium">Your Ultimate Guide to Learning</p>
         </div>
   
         {/* Navigation Tabs */}
         <div className="flex justify-center gap-4 mb-10">
-          <button className="text-gray-800 font-semibold border-b-2 border-yellow-500">
+          <button className="text-black font-medium hover:font-semibold hover:border-b-2 hover:border-[#676767]">
             Popular
           </button>
-          <button className="text-gray-600 font-medium hover:text-gray-800">
+          <button className="text-black font-medium hover:font-semibold hover:border-b-2 hover:border-[#676767]">
             Recommended
           </button>
-          <button className="text-gray-600 font-medium hover:text-gray-800">
+          <button className="text-black font-medium hover:font-semibold hover:border-b-2 hover:border-[#676767]">
             Best Price
           </button>
         </div>
@@ -81,19 +81,24 @@ export default function Courses() {
                 <Image
                   src={course.image}
                   alt={course.title}
-                  className="w-full h-40 object-cover"
+                  width={500}
+                  height={800}
+                  className="object-cover"
                 />
               </div>
   
               {/* Course Info */}
               <div className="p-4">
                 <div className="flex justify-between">
-                <p className="text-sm font-bold text-gray-800 pb-6">{course.category}</p>
+                <p className="text-sm font-bold text-black pb-6">{course.category}</p>
                 {/* <StarIcon className="h-6 w-6 text-[#D9D9D9]" /> */}
-                <p className="text-sm font-bold text-gray-800 pb-6">5.0</p>
+                <div className="flex justify-start items-center gap-1">
+                <Image src="/star.svg" alt="star" width={17} height={17} className="-mt-6"/>
+                <p className="text-sm font-bold text-black pb-6">5.0</p>
                 </div>
-                <h3 className="text-lg font-bold text-gray-800">{course.title}</h3>
-                <p className="text-sm text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                </div>
+                <h3 className="text-lg font-bold text-black">{course.title}</h3>
+                <p className="text-sm text-black mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
                 <div className="flex justify-between items-center">
                   <button className="bg-white text-black py-1 px-4 rounded hover:bg-black hover:text-white border-black border-l border-r border-t border-b ">
                     Enroll Now
@@ -107,7 +112,7 @@ export default function Courses() {
   
         {/* View All Button */}
         <div className="flex justify-center mt-10">
-          <button className="bg-white text-black py-2 px-5 rounded hover:bg-black hover:text-white border-black border-l border-r border-t border-b ">
+          <button className="bg-white text-black py-2 px-5 rounded hover:bg-black hover:text-white border-black border-l border-r border-t border-b mt-5">
             View All Courses
           </button>
         </div>

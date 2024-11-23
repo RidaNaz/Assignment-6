@@ -1,4 +1,5 @@
-import { FaFacebook, FaLinkedin, FaTwitter, FaInstagram } from 'react-icons/fa';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Navbar() {
     return (
@@ -13,10 +14,18 @@ export default function Navbar() {
                 </div>
 
                 <div className='flex gap-5'>
-                    <FaFacebook className="text-black h-6 w-6 hover:text-gray-500" />
-                    <FaInstagram className="text-black h-6 w-6 hover:text-gray-500" />
-                    <FaTwitter className="text-black h-6 w-6 hover:text-gray-500" />
-                    <FaLinkedin className="text-black h-6 w-6 hover:text-gray-500" />
+                    <Link href="" target="_blank" rel="noopener noreferrer">
+                        <Image src="/facebook.svg" alt="facebook" width={10} height={10} />
+                    </Link>
+                    <Link href="" target="_blank" rel="noopener noreferrer">
+                        <Image src="/instagram.svg" alt="instagram" width={18} height={18} />
+                    </Link>
+                    <Link href="" target="_blank" rel="noopener noreferrer">
+                        <Image src="/twitter.svg" alt="twitter" width={18} height={18} />
+                    </Link>
+                    <Link href="" target="_blank" rel="noopener noreferrer">
+                        <Image src="/linkedin.svg" alt="linkedin" width={18} height={18} />
+                    </Link>
                 </div>
 
             </div>
@@ -25,20 +34,31 @@ export default function Navbar() {
 
             <div className='px-12 py-3 flex gap-20 justify-evenly items-center bg-[#F7F7F7] shadow-md'>
                 <div className='flex gap-5 items-center'>
-                    <div className='w-[75px] h-[50px] bg-[#10F2C5] rounded-3xl'>
-
-                    </div>
-                    <div className='text-black font-bold text-3xl hover:text-gray-500'>Ddsgnr</div>
-
+                    <Image src="/frame1.svg" alt="linkedin" width={40} height={40} />
+                    <Link href="">
+                        <div className='text-black font-bold text-3xl'>Ddsgnr</div>
+                    </Link>
                 </div>
 
                 <div className='flex gap-14 text-black bg-white py-1 pl-4 font-medium items-center'>
-                    <p className='hover:border-black border-b border-transparent'>Home</p>
-                    <p className='hover:border-black border-b border-transparent'>Courses</p>
-                    <p className='hover:border-black border-b border-transparent'>Services</p>
-                    <p className='hover:border-black border-b border-transparent'>Achievement</p>
-                    <p className='hover:border-black border-b border-transparent'>About Us</p>
-                    <p className='hover:border-black border-b border-transparent'>Testimonials</p>
+                    <Link href="">
+                        <p className='hover:border-black border-b border-transparent'>Home</p>
+                    </Link>
+                    <Link href="">
+                        <p className='hover:border-black border-b border-transparent'>Courses</p>
+                    </Link>
+                    <Link href="">
+                        <p className='hover:border-black border-b border-transparent'>Services</p>
+                    </Link>
+                    <Link href="">
+                        <p className='hover:border-black border-b border-transparent'>Achievement</p>
+                    </Link>
+                    <Link href="">
+                        <p className='hover:border-black border-b border-transparent'>About Us</p>
+                    </Link>
+                    <Link href="">
+                        <p className='hover:border-black border-b border-transparent'>Testimonials</p>
+                    </Link>
 
                     <div className='gap-3 flex'>
                         <button
