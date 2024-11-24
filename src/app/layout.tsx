@@ -16,8 +16,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Assignment 6",
-  description: "Given by Sir Hamzah Alvi",
+  title: "Figma Design",
+  description: "Assignment given by Sir Hamzah Alvi",
   icons:{
     icon: ['/favicon.ico?v=4'],
     apple: ['/apple-touch-icon.png?v=4'],

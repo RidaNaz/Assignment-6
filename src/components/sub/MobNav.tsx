@@ -19,32 +19,32 @@ export default function MobNav() {
 
           <SheetTitle>
             <Link href="/#home" className="cursor-pointer">
-              <p className='hover:border-black p-4 hover:bg-[#F7F7F7] rounded-2xl border-b border-l border-r border-t border-transparent'>Home</p>
+              <p className='p-4 hover:bg-[#F7F7F7] rounded-2xl px-16'>Home</p>
             </Link>
           </SheetTitle>
           <SheetTitle>
             <Link href="/#courses" className="cursor-pointer">
-              <p className='hover:border-black p-4 hover:bg-[#F7F7F7] rounded-2xl border-b border-l border-r border-t border-transparent'>Courses</p>
+              <p className='p-4 hover:bg-[#F7F7F7] rounded-2xl px-16'>Courses</p>
             </Link>
           </SheetTitle>
           <SheetTitle>
             <Link href="/#services" className="cursor-pointer">
-              <p className='hover:border-black p-4 hover:bg-[#F7F7F7] rounded-2xl border-b border-l border-r border-t border-transparent'>Services</p>
+              <p className='p-4 hover:bg-[#F7F7F7] rounded-2xl px-16'>Services</p>
             </Link>
           </SheetTitle>
           <SheetTitle>
             <Link href="/#achievement" className="cursor-pointer">
-              <p className='hover:border-black p-4 hover:bg-[#F7F7F7] rounded-2xl border-b border-l border-r border-t border-transparent'>Achievement</p>
+              <p className='p-4 hover:bg-[#F7F7F7] rounded-2xl px-16'>Achievement</p>
             </Link>
           </SheetTitle>
           <SheetTitle>
             <Link href="/#about-us" className="cursor-pointer">
-              <p className='hover:border-black p-4 hover:bg-[#F7F7F7] rounded-2xl border-b border-l border-r border-t border-transparent'>About Us</p>
+              <p className='p-4 hover:bg-[#F7F7F7] rounded-2xl px-16'>About Us</p>
             </Link>
           </SheetTitle>
           <SheetTitle>
             <Link href="/#testimonials" className="cursor-pointer">
-              <p className='hover:border-black p-4 hover:bg-[#F7F7F7] rounded-2xl border-b border-l border-r border-t border-transparent'>Testimonials</p>
+              <p className='p-4 hover:bg-[#F7F7F7] rounded-2xl px-16'>Testimonials</p>
             </Link>
           </SheetTitle>
 
