@@ -49,13 +49,13 @@ const Footer = () => {
                                 height={50}
                                 className="w-8 h-8 object-contain"
                             />
-                            <span className="font-semibold text-xl text-black xl:text-2xl">Ddsgnr</span>
+                            <span className="font-semibold text-2xl text-black">Ddsgnr</span>
                         </Link>
                     </div>
 
                     {/* Courses */}
                     <div className="justify-items-center md:justify-items-start">
-                        <h3 className="font-semibold mb-4 text-black">Courses</h3>
+                        <h3 className="font-semibold mb-4 text-black xl:text-lg">Courses</h3>
                         <ul className="space-y-2 text-black justify-items-center md:justify-items-start">
                             <li><Link href="" className="hover:underline">Business</Link></li>
                             <li><Link href="" className="hover:underline">Development</Link></li>
@@ -67,7 +67,7 @@ const Footer = () => {
 
                     {/* Resources */}
                     <div className="justify-items-center md:justify-items-start">
-                        <h3 className="font-semibold mb-4 text-black ">Resources</h3>
+                        <h3 className="font-semibold mb-4 text-black xl:text-lg">Resources</h3>
                         <ul className="space-y-2 text-black justify-items-center md:justify-items-start">
                             <li><Link href="" className="hover:underline">Career</Link></li>
                             <li><Link href="" className="hover:underline">Resume</Link></li>
@@ -79,7 +79,7 @@ const Footer = () => {
 
                     {/* About Us */}
                     <div className="justify-items-center md:justify-items-start">
-                        <h3 className="font-semibold mb-4 text-black">About Us</h3>
+                        <h3 className="font-semibold mb-4 text-black xl:text-lg">About Us</h3>
                         <ul className="space-y-2 text-black justify-items-center md:justify-items-start">
                             <li><Link href="" className="hover:underline">Contact</Link></li>
                             <li><Link href="" className="hover:underline">Help/Support</Link></li>
@@ -95,7 +95,7 @@ const Footer = () => {
                     <div className="p-5  grid grid-cols-1 lg:grid-cols-5 gap-5 justify-items-center mt-4">
 
                         <div className="text-black flex text-sm gap-10 -mx-8 sm:-mx-4">&copy; 2023 Ddsgnr. All rights reserved.</div>
-                        <div className="flex space-x-4 text-black text-xs md:text-sm lg:col-span-2 ">
+                        <div className="flex space-x-4 text-black text-xs md:text-sm lg:col-span-2">
                             <Link href="" className="underline">Privacy Policy</Link>
                             <Link href="" className="underline">Terms of Service</Link>
                             <Link href="" className="underline">Cookie Settings</Link>

@@ -57,7 +57,7 @@ const testimonials = [
 
 const Testimonials = () => {
     return (
-        <section id="testimonials" className="py-12 bg-[#F7F7F7] mb-10 px-4 w-full">
+        <section id="testimonials" className="py-12 bg-gray-100 mb-10 px-4 w-full">
             <div className="w-full mx-auto px-4">
                 {/* Header */}
                 <div className="text-center mb-5 justify-items-start">
@@ -80,7 +80,10 @@ const Testimonials = () => {
                     pagination={{
                         clickable: true, // Enable dots for pagination
                     }}
-                    navigation={true} // Enable navigation buttons
+                    navigation={{
+                        prevEl: ".custom-prev",
+                        nextEl: ".custom-next",
+                    }} // Use custom buttons
                     breakpoints={{
                         768: {
                             slidesPerView: 2, // 2 slides on medium screens
@@ -89,7 +92,7 @@ const Testimonials = () => {
                             slidesPerView: 3, // 3 slides on large screens
                         },
                     }}
-                    className="mySwiper"
+                    className="mySwiper shadow-md"
                 >
                     {testimonials.map((testimonial, index) => (
                         <SwiperSlide key={index}>
@@ -122,6 +125,16 @@ const Testimonials = () => {
                         </SwiperSlide>
                     ))}
                 </Swiper>
+
+                {/* Custom Navigation Buttons */}
+                <div className="flex justify-end gap-2 mt-5">
+                    <button className="custom-prev bg-transparent border-none cursor-pointer focus:outline-none">
+                        <Image src="/left.svg" alt="Previous" width={35} height={35} />
+                    </button>
+                    <button className="custom-next bg-transparent border-none cursor-pointer focus:outline-none">
+                        <Image src="/right.svg" alt="Next" width={35} height={35} />
+                    </button>
+                </div>
             </div>
         </section>
     );

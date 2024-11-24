@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <div
       id="home"
-      className="grid grid-cols-1 md:grid-cols-2 text-black gap-24 lg:gap-32 items-center px-5 lg:px-24 py-10 lg:py-0"
+      className="grid grid-cols-1 md:grid-cols-2 text-black gap-36 md:gap-24 lg:gap-32 items-center px-5 lg:px-24 py-10 lg:py-0"
     >
       {/* Left Section: Text and Buttons */}
       <div className="flex flex-col gap-5 justify-center mt-16 lg:mt-0">
