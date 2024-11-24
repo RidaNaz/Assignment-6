@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import MobNav from './sub/MobNav';
 
 export default function Navbar() {
     return (
@@ -71,6 +72,9 @@ export default function Navbar() {
                             </div>
                         </div>
                     </div>
+                </div>
+                <div className='lg:hidden block'>
+                    <MobNav />
                 </div>
             </div>
         </div >
