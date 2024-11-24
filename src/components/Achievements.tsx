@@ -12,7 +12,7 @@ export default function Achievements() {
           </div>
   
           {/* Statistics Section */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 text-center">
+          <div className="grid grid-cols-2 gap-8 sm:grid-cols-4 text-center">
             <div>
               <p className="text-3xl font-bold text-black">+200</p>
               <p className="text-black">Courses</p>

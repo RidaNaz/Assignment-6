@@ -15,7 +15,7 @@ export default function Explore() {
     ];
 
     return (
-        <section className="py-20 bg-white mt-80 md:mt-64 lg:mt-40 xl:mt-60 w-full">
+        <section className="py-20 bg-white mt-56 md:mt-64 lg:mt-40 xl:mt-60 w-full">
       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center pb-6">
           <h2 className="text-3xl font-bold text-black">Explore Courses By Category</h2>

@@ -45,8 +45,8 @@ const TeamMember = ({ name, role, image}: TeamMemberType) => {
     <div className="flex flex-col items-center bg-[#F7F7F7] p-6 rounded-lg ">
       <Image src={image}
         alt={name}
-        width={80}
-        height={80}
+        width={100}
+        height={100}
         className="object-cover mb-4" />
 
       <h3 className="text-xl font-semibold text-black">{name}</h3>

@@ -94,7 +94,7 @@ const Footer = () => {
                 <div className="mt-16 border-t border-black mx-8 md:mx-14">
                     <div className="p-5  grid grid-cols-1 lg:grid-cols-5 gap-5 justify-items-center mt-4">
 
-                        <div className="text-black flex text-sm gap-10 -mx-2">&copy; 2023 Ddsgnr. All rights reserved.</div>
+                        <div className="text-black flex text-sm gap-10 -mx-8 sm:-mx-4">&copy; 2023 Ddsgnr. All rights reserved.</div>
                         <div className="flex space-x-4 text-black text-xs md:text-sm lg:col-span-2 ">
                             <Link href="" className="underline">Privacy Policy</Link>
                             <Link href="" className="underline">Terms of Service</Link>
