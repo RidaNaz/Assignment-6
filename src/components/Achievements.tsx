@@ -1,6 +1,6 @@
 export default function Achievements() {
     return (
-      <div className="w-full flex items-center justify-center bg-white py-12">
+      <div id="achievement" className="w-full flex items-center justify-center bg-white py-12">
         <div className="p-6 max-w-8xl w-full">
           {/* Header Section */}
           <div className="text-center mb-12">

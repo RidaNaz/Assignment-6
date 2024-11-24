@@ -41,7 +41,7 @@ const Testimonials = () => {
     };
 
     return (
-        <section className="py-12 bg-[#F7F7F7] mb-10 px-4">
+        <section id="testimonials" className="py-12 bg-[#F7F7F7] mb-10 px-4">
             <div className="w-fit mx-auto px-4">
                 {/* Header */}
                 <div className="text-center mb-5 justify-items-start">

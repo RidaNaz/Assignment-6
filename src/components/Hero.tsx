@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Hero() {
     return (
-        <div className="grid grid-cols-1 lg:grid-cols-2 text-black gap-32">
+        <div id="home" className="grid grid-cols-1 lg:grid-cols-2 text-black gap-32">
 
             <div className="flex flex-col gap-5 mx-7 lg:mx-0 lg:ml-24 justify-center mt-36">
 

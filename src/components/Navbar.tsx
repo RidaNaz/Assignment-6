@@ -33,7 +33,7 @@ export default function Navbar() {
             </div>
 
 
-            <div className='px-12 py-3 flex gap-20 lg:justify-evenly justify-start items-center bg-[#F7F7F7] shadow-md'>
+            <div className='px-12 py-3 flex gap-20 lg:justify-evenly justify-between items-center bg-[#F7F7F7] shadow-md'>
                 <div className='flex gap-5 items-center'>
                     <Image src="/frame1.svg" alt="linkedin" width={40} height={40} />
                     <Link href="">
@@ -43,22 +43,22 @@ export default function Navbar() {
 
                 <div className='hidden lg:block '>
                     <div className='flex gap-14 text-black bg-white py-1 pl-4 xl:pr-0 pr-4 font-medium items-center'>
-                        <Link href="">
+                        <Link href="/#home" className="cursor-pointer">
                             <p className='hover:border-black border-b border-transparent'>Home</p>
                         </Link>
-                        <Link href="">
+                        <Link href="/#courses" className="cursor-pointer">
                             <p className='hover:border-black border-b border-transparent'>Courses</p>
                         </Link>
-                        <Link href="">
+                        <Link href="/#services" className="cursor-pointer">
                             <p className='hover:border-black border-b border-transparent'>Services</p>
                         </Link>
-                        <Link href="">
+                        <Link href="/#achievement" className="cursor-pointer">
                             <p className='hover:border-black border-b border-transparent'>Achievement</p>
                         </Link>
-                        <Link href="">
+                        <Link href="/#about-us" className="cursor-pointer">
                             <p className='hover:border-black border-b border-transparent'>About</p>
                         </Link>
-                        <Link href="">
+                        <Link href="/#testimonials" className="cursor-pointer">
                             <p className='hover:border-black border-b border-transparent'>Testimonials</p>
                         </Link>
 

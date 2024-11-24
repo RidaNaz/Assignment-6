@@ -49,7 +49,7 @@ export default function Courses() {
     ];
   
     return (
-      <div className="mt-10 min-h-screen bg-white py-10 mb-14">
+      <div id="courses" className="mt-10 min-h-screen bg-white py-10 mb-14">
         {/* Header Section */}
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold text-black pb-4">Courses</h1>
