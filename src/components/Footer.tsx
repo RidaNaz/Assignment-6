@@ -8,14 +8,14 @@ const Footer = () => {
                 {/* Newsletter Section */}
                 <div className="flex flex-col md:flex-row gap-6 mb-8 ">
 
-                    <div className="grid md:grid-cols-2 grid-cols-1 gap-10 mx-4 justify-items-center">
+                    <div className="grid md:grid-cols-3 xl:grid-cols-4 grid-cols-1 gap-10 px-6 md:px-10 justify-items-center">
                         <div className="justify-items-center md:justify-items-start">
                             <h2 className="text-xl font-bold mb-2 text-black">Subscribe to our newsletter</h2>
                             <p className="text-black mb-4">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             </p>
                         </div>
-                        <div>
+                        <div className="w-full col-span-2 xl:col-span-3">
                             <form className="grid grid-cols-1 md:grid-cols-2 gap-5">
                                 <input
                                     type="email"
@@ -23,7 +23,7 @@ const Footer = () => {
                                     className="flex-grow border border-gray-300 rounded-md px-4 py-2 "
                                 />
                                 <button type="submit"
-                                    className="bg-white text-black py-2 px-5 rounded hover:bg-black hover:text-white border-black border-l border-r border-t border-b ">
+                                    className="bg-white text-black py-2 px-10 w-full md:w-fit rounded hover:bg-black hover:text-white border-black border-l border-r border-t border-b ">
                                     Subscribe
                                 </button>
                             </form>
@@ -49,7 +49,7 @@ const Footer = () => {
                                 height={50}
                                 className="w-8 h-8 object-contain"
                             />
-                            <span className="font-semibold text-xl text-black">Ddsgnr</span>
+                            <span className="font-semibold text-xl text-black xl:text-2xl">Ddsgnr</span>
                         </Link>
                     </div>
 
@@ -91,10 +91,10 @@ const Footer = () => {
                 </div>
 
                 {/* Footer Bottom */}
-                <div className="mt-16 border-t border-black mx-14">
+                <div className="mt-16 border-t border-black mx-8 md:mx-14">
                     <div className="p-5  grid grid-cols-1 lg:grid-cols-5 gap-5 justify-items-center mt-4">
 
-                        <div className="text-black flex text-sm gap-10">&copy; 2023 Ddsgnr. All rights reserved.</div>
+                        <div className="text-black flex text-sm gap-10 -mx-2">&copy; 2023 Ddsgnr. All rights reserved.</div>
                         <div className="flex space-x-4 text-black text-xs md:text-sm lg:col-span-2 ">
                             <Link href="" className="underline">Privacy Policy</Link>
                             <Link href="" className="underline">Terms of Service</Link>

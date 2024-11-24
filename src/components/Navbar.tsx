@@ -6,7 +6,7 @@ export default function Navbar() {
     return (
         <div className='flex flex-col gap-4 z-10 relative'>
             <div className='hidden lg:block'>
-                <div className=" px-12 py-2 bg-[#F7F7F7] flex text-black gap-10 border items-center justify-evenly shadow-md">
+                <div className=" px-14 py-2 bg-[#F7F7F7] flex text-black gap-10 border items-center justify-evenly shadow-md">
 
                     <div className='w-5/6 flex gap-5 items-center'>
                         <p>Phone Number: 956 742 455 678</p>
@@ -33,7 +33,7 @@ export default function Navbar() {
             </div>
 
 
-            <div className='px-12 py-3 flex gap-20 lg:justify-evenly justify-between items-center bg-[#F7F7F7] shadow-md'>
+            <div className='md:px-16 px-4 xl:px-20 py-3 flex gap-20  justify-between items-center bg-[#F7F7F7] shadow-md'>
                 <div className='flex gap-5 items-center'>
                     <Image src="/frame1.svg" alt="linkedin" width={40} height={40} />
                     <Link href="">
