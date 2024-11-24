@@ -24,3 +24,44 @@ body {
     --radius: 0.5rem;
   }
 }
+
+/* Change default Swiper pagination dots color */
+.swiper-pagination-bullet {
+  background-color: black !important; /* Change dots to black */
+  opacity: 1; /* Ensure full visibility */
+}
+
+/* Optional: Change active dot color */
+.swiper-pagination-bullet-active {
+  background-color: #000000 !important; /* Black for the active dot */
+}
+
+
+/* Adjust arrow styles */
+.swiper-button-prev,
+.swiper-button-next {
+    color: black !important; /* Change arrow color to black */
+    bottom: -30px; /* Move arrows to below the carousel */
+    top: auto; /* Reset default top position */
+    z-index: 10; /* Ensure arrows are above other elements */
+}
+
+/* Adjust arrow positions */
+.swiper-button-prev {
+    left: 45%; /* Center the previous arrow horizontally */
+}
+
+.swiper-button-next {
+    right: 45%; /* Center the next arrow horizontally */
+}
+
+/* Style pagination dots */
+.swiper-pagination-bullet {
+    background-color: black !important; /* Change pagination dot color to black */
+}
+
+/* Optional: Hover effect for arrows */
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    transform: scale(1.2); /* Add a subtle zoom effect on hover */
+}

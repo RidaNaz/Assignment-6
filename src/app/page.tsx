@@ -16,6 +16,7 @@ export default function Home() {
       <Courses />
       <Team />
       <Testimonials />
+      {/* <Carousel /> */}
     </div>
   );
 }

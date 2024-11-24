@@ -1,6 +1,8 @@
 "use client";
 import Image from "next/image";
-import { useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import "swiper/swiper-bundle.css"; // Import Swiper styles
 
 const testimonials = [
     {
@@ -26,23 +28,37 @@ const testimonials = [
         rating: 5,
         feedback:
             '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."',
-    }
+    },
+    {
+        name: 'Stephen Kerubo',
+        role: 'President of Sales',
+        photo: '/person5.png',
+        rating: 5,
+        feedback:
+            '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."',
+    },
+    {
+        name: 'Joseph Munyambu',
+        role: 'Nursing Assistant',
+        photo: '/person2.png',
+        rating: 5,
+        feedback:
+            '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."',
+    },
+    {
+        name: 'Erick Kipkemboi',
+        role: 'Web Designer',
+        photo: '/person4.png',
+        rating: 5,
+        feedback:
+            '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."',
+    },
 ];
 
 const Testimonials = () => {
-    const [currentIndex, setCurrentIndex] = useState(0);
-
-    const nextTestimonial = () => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
-    };
-
-    const prevTestimonial = () => {
-        setCurrentIndex((prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length);
-    };
-
     return (
-        <section id="testimonials" className="py-12 bg-[#F7F7F7] mb-10 px-4">
-            <div className="w-fit mx-auto px-4">
+        <section id="testimonials" className="py-12 bg-[#F7F7F7] mb-10 px-4 w-full">
+            <div className="w-full mx-auto px-4">
                 {/* Header */}
                 <div className="text-center mb-5 justify-items-start">
                     <h2 className="text-3xl font-bold mb-2 text-black pb-5">Customer testimonials</h2>
@@ -52,57 +68,60 @@ const Testimonials = () => {
                 </div>
 
                 {/* Testimonials Carousel */}
-                    <div className="grid md:grid-cols-3 overflow-hidden">
-                        {testimonials.map((testimonial, index) => (
-                            <div
-                                key={index}
-                                className={`flex-none w-full transform transition-transform ${index === currentIndex ? "scale-100" : "scale-95"
-                                    }`}
-                            >
-                                <div className="bg-[#F7F7F7] border border-black shadow-lg p-10 text-left">
-                                    {/* Star Rating */}
-                                    <div className="flex space-x-1 mb-4">
-                                        {Array.from({ length: testimonial.rating }).map((_, i) => (
-                                            <Image key={i} src="/starblack.svg" alt="star" width={17} height={17} className=" -mt-6"/>
-                                        ))}
-                                    </div>
+                <Swiper
+                    modules={[Navigation, Pagination, Autoplay]} // Enable navigation, pagination, and autoplay
+                    spaceBetween={20} // Space between slides
+                    slidesPerView={1} // Default 1 slide on small screens
+                    loop={true} // Enable looping
+                    autoplay={{
+                        delay: 3000, // Autoplay speed in ms
+                        disableOnInteraction: false, // Keep autoplay after interaction
+                    }}
+                    pagination={{
+                        clickable: true, // Enable dots for pagination
+                    }}
+                    navigation={true} // Enable navigation buttons
+                    breakpoints={{
+                        768: {
+                            slidesPerView: 2, // 2 slides on medium screens
+                        },
+                        1024: {
+                            slidesPerView: 3, // 3 slides on large screens
+                        },
+                    }}
+                    className="mySwiper"
+                >
+                    {testimonials.map((testimonial, index) => (
+                        <SwiperSlide key={index}>
+                            <div className="border border-black shadow-lg p-10 text-left w-full mx-auto">
+                                {/* Star Rating */}
+                                <div className="flex space-x-1 mb-4">
+                                    {Array.from({ length: testimonial.rating }).map((_, i) => (
+                                        <Image key={i} src="/starblack.svg" alt="star" width={17} height={17} />
+                                    ))}
+                                </div>
 
-                                    {/* Feedback */}
-                                    <p className="text-black text-sm mb-4">
-                                        {testimonial.feedback}
-                                    </p>
+                                {/* Feedback */}
+                                <p className="text-black text-sm mb-4">{testimonial.feedback}</p>
 
-                                    {/* Author Info */}
-                                    <div className="flex items-center space-x-4">
-                                        <Image
-                                            src={testimonial.photo}
-                                            alt={testimonial.name}
-                                            width={100}
-                                            height={100}
-                                            className="w-12 h-12 rounded-full object-cover"
-                                        />
-                                        <div>
-                                            <h4 className="text-black font-bold">{testimonial.name}</h4>
-                                            <p className="text-black text-sm">{testimonial.role}</p>
-                                        </div>
+                                {/* Author Info */}
+                                <div className="flex items-center space-x-4">
+                                    <Image
+                                        src={testimonial.photo}
+                                        alt={testimonial.name}
+                                        width={100}
+                                        height={100}
+                                        className="w-12 h-12 rounded-full object-cover"
+                                    />
+                                    <div>
+                                        <h4 className="text-black font-bold">{testimonial.name}</h4>
+                                        <p className="text-black text-sm">{testimonial.role}</p>
                                     </div>
                                 </div>
                             </div>
-                        ))}
-                    </div>
-            </div>
-            {/* Navigation Buttons */}
-            <div className="flex gap-4 justify-end mr-10 mt-10">
-                <button
-                    onClick={prevTestimonial}
-                >
-                    <Image src="/left.svg" alt="left arrow" width={50} height={50} />
-                </button>
-                <button
-                    onClick={nextTestimonial}
-                >
-                    <Image src="/right.svg" alt="right arrow" width={50} height={50} />
-                </button>
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
             </div>
         </section>
     );
